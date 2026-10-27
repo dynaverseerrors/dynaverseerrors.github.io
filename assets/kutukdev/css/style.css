@@ -93,3 +93,10 @@
 .site-header.dv-header{display:block}
 .post-card__content,.post-card__title,.post-card__excerpt,.article-title,.article-content,.article-content :is(h2,h3,h4,p,li,td,th,a){overflow-wrap:anywhere}
 .article-content pre,.kg-code-card pre{overflow-wrap:normal}
+.dv-nav a,.dv-footer a{background-image:none}
+.dv-nav a:hover{background-image:none}
+/* related posts: stack image over text inside the 3-column grid */
+.related-posts .post-card[data-layout=horizontal][data-has-featured-image=true]{grid-template-columns:minmax(0,1fr);align-content:start}
+.related-posts .post-card[data-layout=horizontal] .post-card__figure{aspect-ratio:16/9;height:auto}
+.related-posts .post-card[data-layout=horizontal] .post-card__title{font-size:1.1rem;line-height:1.3}
+.site-header.dv-header{height:auto;min-height:0}
