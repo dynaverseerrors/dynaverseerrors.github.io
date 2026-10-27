@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynaverse Errors</title>
+  <meta name="description" content="Fixes for Dynamics 365 API, Dynamics 365 and Dataverse error codes: causes, quick fixes, step-by-step solutions, command examples and FAQ.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+  <link rel="canonical" href="https://dynaverseerrors.github.io/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dynaverse Errors">
+  <meta property="og:description" content="Fixes for Dynamics 365 API, Dynamics 365 and Dataverse error codes: causes, quick fixes, step-by-step solutions, command examples and FAQ.">
+  <meta property="og:url" content="https://dynaverseerrors.github.io/">
+  <meta property="og:site_name" content="Dynaverse Errors">
+
+  <meta property="og:image" content="https://dynaverseerrors.github.io/logo.webp">
+  <meta property="og:image:alt" content="Dynaverse Errors">
+  <meta property="og:image:width" content="117">
+  <meta property="og:image:height" content="96">
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dynaverse Errors">
+  <meta name="twitter:description" content="Fixes for Dynamics 365 API, Dynamics 365 and Dataverse error codes: causes, quick fixes, step-by-step solutions, command examples and FAQ.">
+  <meta name="twitter:image" content="https://dynaverseerrors.github.io/logo.webp">
+  <link rel="preconnect" href="https://tse1.mm.bing.net">
+  <link rel="preload" as="font" type="font/woff2" href="/assets/kutukdev/fonts/source-sans-pro-v21-latin-ext_latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/kutukdev/fonts/source-sans-pro-v21-latin-ext_latin-600.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/kutukdev/fonts/source-sans-pro-v21-latin-ext_latin-700.woff2" crossorigin>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://dynaverseerrors.github.io/#website", "url": "https://dynaverseerrors.github.io/", "name": "Dynaverse Errors", "publisher": {"@id": "https://dynaverseerrors.github.io/#organization"}, "inLanguage": "en_US", "potentialAction": {"@type": "SearchAction", "target": "https://dynaverseerrors.github.io/?q={search_term_string}", "query-input": "required name=search_term_string"}}
+</script>
+<style>
+@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;font-display:swap;src:url('/assets/kutukdev/fonts/source-sans-pro-v21-latin-ext_latin-regular.woff2') format('woff2')}
+@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;font-display:swap;src:url('/assets/kutukdev/fonts/source-sans-pro-v21-latin-ext_latin-600.woff2') format('woff2')}
+@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;font-display:swap;src:url('/assets/kutukdev/fonts/source-sans-pro-v21-latin-ext_latin-700.woff2') format('woff2')}
+</style>
+  <link rel="stylesheet" href="/assets/kutukdev/css/style.css">
+</head>
+<body class="home-template">
+  <a class="skip-link visually-hidden-focusable" href="#main">Skip to content</a>
+  <div class="site" id="site">
+<header id="site-header" class="site-header dv-header">
+  <div class="dv-header__bar">
+    <a href="/" rel="home" class="dv-brand">
+      <img src="/logo.webp" alt="Dynaverse Errors" width="117" height="96">
+      <span class="dv-brand__name">Dynaverse Errors</span>
+    </a>
+    <nav class="dv-nav" aria-label="Error hubs">
+        <a href="/category/dynamics-365-api-errors/">Dynamics 365 API Errors</a>
+        <a href="/category/dynamics-365-errors/">Dynamics 365 Errors</a>
+        <a href="/category/dataverse-errors/">Dataverse Errors</a>
+        <a href="/category/dynamics-365-api-developer/">Dynamics 365 API Developer</a>
+        <a href="/category/dynamics-365-developer/">Dynamics 365 Developer</a>
+        <a href="/category/dataverse-developer/">Dataverse Developer</a>
+        <a href="/category/dynamics-365-admin/">Dynamics 365 Admin</a>
+        <a href="/category/dynamics-365-api-admin/">Dynamics 365 API Admin</a>
+    </nav>
+  </div>
+  <div class="dv-search">
+    <p class="dv-search__tagline">Find the fix for any Dynamics 365 API, Dynamics 365 &amp; Dataverse error</p>
+    <form role="search" method="get" action="/">
+      <input type="search" name="q" id="dv-search-input" placeholder="Search error code, e.g. 0x80040220  ( / )" aria-label="Search errors" autocomplete="off">
+      <div class="dv-search__results" id="dv-search-results" hidden></div>
+    </form>
+  </div>
+</header>
+    <main id="main" class="site-main">
+<style>
+.dv-hubs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;max-width:1160px;margin:18px auto;padding:0 20px;box-sizing:border-box}
+.dv-hubs a{display:block;background:#fff;border:1px solid #dfe3e8;border-radius:12px;padding:14px 16px;color:#1b1f24;text-decoration:none;font-weight:600;font-size:.95rem}
+.dv-hubs a span{display:block;color:#5b6572;font-weight:400;font-size:.82rem;margin-top:4px}
+.dv-hubs a:hover{border-color:#0b5cad}
+.dv-hubs-title{max-width:1160px;margin:18px auto 0;padding:0 20px;font-size:1.3rem;color:#1b1f24}
+</style>
+      <div class="ad-slot ad-slot--468"><span class="ad-slot__label">Advertisement</span><div class="ad-slot__box">
+<script>
+  atOptions = {
+    'key' : '2ae45376961d3205d47ae3d3acd65458',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/2ae45376961d3205d47ae3d3acd65458"></script>
+</div></div>
+      <h2 class="dv-hubs-title">Browse by hub</h2>
+      <div class="dv-hubs">
+      <a href="/category/dynamics-365-api-errors/">Dynamics 365 API Errors<span>4478 articles</span></a>
+      <a href="/category/dynamics-365-errors/">Dynamics 365 Errors<span>4157 articles</span></a>
+      <a href="/category/dataverse-errors/">Dataverse Errors<span>4157 articles</span></a>
+      <a href="/category/dynamics-365-api-developer/">Dynamics 365 API Developer<span>2053 articles</span></a>
+      <a href="/category/dynamics-365-developer/">Dynamics 365 Developer<span>1914 articles</span></a>
+      <a href="/category/dataverse-developer/">Dataverse Developer<span>1914 articles</span></a>
+      <a href="/category/dynamics-365-admin/">Dynamics 365 Admin<span>1070 articles</span></a>
+      <a href="/category/dynamics-365-api-admin/">Dynamics 365 API Admin<span>257 articles</span></a>
+      </div>
+      <div id="dv-results" class="dv-results"></div>
+      <div class="site-content section">
+        <div class="posts-feed" data-layout-grid="columns">
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040209.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040209&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040209: un Managedidsinvalidbusinessid – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040209.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040209: un Managedidsinvalidbusinessid – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040209 in Dataverse: unManagedidsinvalidbusinessid: Invalid business</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-developer/dataverse-un-managedidsjournalingmissingeventtype-plugin.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-un-managedidsjournalingmissingeventtype-plugin&w=474&h=274&c=7"
+           loading="lazy"
+           alt="un Managedidsjournalingmissingeventtype (0x80040804) in Dataverse: Plugin, Power Automate and Custom Connector Handling">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-developer/dataverse-un-managedidsjournalingmissingeventtype-plugin.html" class="post-card__content-link">
+      <h2 class="post-card__title">un Managedidsjournalingmissingeventtype (0x80040804) in Dataverse: Plugin, Power Automate and Custom Connector Handling</h2>
+      <p class="post-card__excerpt">0x80040804 in Dataverse: unManagedidsjournalingmissingeventtype: Event type</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Developer
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c3e.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c3e&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C3E: un Managedidsevaltimererrorcalculatescheduletime – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c3e.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C3E: un Managedidsevaltimererrorcalculatescheduletime – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C3E in Dataverse: unManagedidsevaltimererrorcalculatescheduletime: Failed to calculate the schedule time for the timer</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x8004020e.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x8004020e&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x8004020E: un Managedidsinvalidvisibility – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x8004020e.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x8004020E: un Managedidsinvalidvisibility – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x8004020E in Dataverse: unManagedidsinvalidvisibility: Invalid</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040802.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040802&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040802: un Managedidsjournalingmissingeventdirection – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040802.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040802: un Managedidsjournalingmissingeventdirection – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040802 in Dataverse: unManagedidsjournalingmissingeventdirection: Event direction code</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040809.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040809&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040809: un Managedidsjournalingmissingincidentid – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040809.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040809: un Managedidsjournalingmissingincidentid – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040809 in Dataverse: unManagedidsjournalingmissingincidentid: Incident Id</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x8004020f.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x8004020f&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x8004020F: un Managedidsfailureinittoken – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x8004020f.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x8004020F: un Managedidsfailureinittoken – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x8004020F in Dataverse: unManagedidsfailureinittoken: Failure in obtaining user</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040212.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040212&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040212: un Managedidsinvalidowninguser – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040212.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040212: un Managedidsinvalidowninguser – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040212 in Dataverse: unManagedidsinvalidowninguser: Item does not have an owning</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-developer/dataverse-un-managedidsinvoicecloseapideprecated-plugin.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-un-managedidsinvoicecloseapideprecated-plugin&w=474&h=274&c=7"
+           loading="lazy"
+           alt="un Managedidsinvoicecloseapideprecated (0x80043B25) in Dataverse: Plugin, Power Automate and Custom Connector Handling">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-developer/dataverse-un-managedidsinvoicecloseapideprecated-plugin.html" class="post-card__content-link">
+      <h2 class="post-card__title">un Managedidsinvoicecloseapideprecated (0x80043B25) in Dataverse: Plugin, Power Automate and Custom Connector Handling</h2>
+      <p class="post-card__excerpt">0x80043B25 in Dataverse: unManagedidsinvoicecloseapideprecated: The Invoice Close API is deprecated. It has been replaced by the Pay and Cancel</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Developer
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-developer/dataverse-un-managedidsevalmissselectquery-plugin.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-un-managedidsevalmissselectquery-plugin&w=474&h=274&c=7"
+           loading="lazy"
+           alt="un Managedidsevalmissselectquery (0x80042C0E) in Dataverse: Plugin, Power Automate and Custom Connector Handling">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-developer/dataverse-un-managedidsevalmissselectquery-plugin.html" class="post-card__content-link">
+      <h2 class="post-card__title">un Managedidsevalmissselectquery (0x80042C0E) in Dataverse: Plugin, Power Automate and Custom Connector Handling</h2>
+      <p class="post-card__excerpt">0x80042C0E in Dataverse: unManagedidsevalmissselectquery: Missing the query subparameter in a select</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Developer
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-developer/dataverse-un-managedidsjournalinginvalideventtype-plugin.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-un-managedidsjournalinginvalideventtype-plugin&w=474&h=274&c=7"
+           loading="lazy"
+           alt="un Managedidsjournalinginvalideventtype (0x80040803) in Dataverse: Plugin, Power Automate and Custom Connector Handling">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-developer/dataverse-un-managedidsjournalinginvalideventtype-plugin.html" class="post-card__content-link">
+      <h2 class="post-card__title">un Managedidsjournalinginvalideventtype (0x80040803) in Dataverse: Plugin, Power Automate and Custom Connector Handling</h2>
+      <p class="post-card__excerpt">0x80040803 in Dataverse: unManagedidsjournalinginvalideventtype: Invalid event</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Developer
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-developer/dataverse-un-managedidsfulltextoperationfailed-plugin.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-un-managedidsfulltextoperationfailed-plugin&w=474&h=274&c=7"
+           loading="lazy"
+           alt="un Managedidsfulltextoperationfailed (0x80043E06) in Dataverse: Plugin, Power Automate and Custom Connector Handling">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-developer/dataverse-un-managedidsfulltextoperationfailed-plugin.html" class="post-card__content-link">
+      <h2 class="post-card__title">un Managedidsfulltextoperationfailed (0x80043E06) in Dataverse: Plugin, Power Automate and Custom Connector Handling</h2>
+      <p class="post-card__excerpt">0x80043E06 in Dataverse: unManagedidsfulltextoperationfailed: Full text operation</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Developer
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<div class="ad-slot ad-slot--300"><span class="ad-slot__label">Advertisement</span><div class="ad-slot__box">
+<script>
+  atOptions = {
+    'key' : '76edcf33d56397a5e8a4e65d6779a73f',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/76edcf33d56397a5e8a4e65d6779a73f"></script>
+</div></div>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x8004020a.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x8004020a&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x8004020A: un Managedidsinvalidorgid – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x8004020a.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x8004020A: un Managedidsinvalidorgid – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x8004020A in Dataverse: unManagedidsinvalidorgid: Invalid organization</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80043b25.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80043b25&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80043B25: un Managedidsinvoicecloseapideprecated – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80043b25.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80043B25: un Managedidsinvoicecloseapideprecated – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80043B25 in Dataverse: unManagedidsinvoicecloseapideprecated: The Invoice Close API is deprecated. It has been replaced by the Pay and Cancel</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c00.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c00&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C00: un Managedidsevalupdateshouldhave3parameters – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c00.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C00: un Managedidsevalupdateshouldhave3parameters – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C00 in Dataverse: unManagedidsevalupdateshouldhave3parameters: Update action should have 3</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040806.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040806&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040806: un Managedidsjournalingmissingaccountid – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040806.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040806: un Managedidsjournalingmissingaccountid – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040806 in Dataverse: unManagedidsjournalingmissingaccountid: Account Id</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040208.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040208&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040208: un Managedidsinvalidteamid – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040208.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040208: un Managedidsinvalidteamid – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040208 in Dataverse: unManagedidsinvalidteamid: Team with Id = {0} has type {1}. It&#x27;s not allowed to add members to Microsoft Entra(formerly AAD) security group teams or</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040803.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040803&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040803: un Managedidsjournalinginvalideventtype – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040803.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040803: un Managedidsjournalinginvalideventtype – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040803 in Dataverse: unManagedidsjournalinginvalideventtype: Invalid event</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040804.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040804&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040804: un Managedidsjournalingmissingeventtype – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040804.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040804: un Managedidsjournalingmissingeventtype – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040804 in Dataverse: unManagedidsjournalingmissingeventtype: Event type</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040213.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040213&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040213: un Managedidsinvalidvisibilitymodificationaccess – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040213.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040213: un Managedidsinvalidvisibilitymodificationaccess – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040213 in Dataverse: unManagedidsinvalidvisibilitymodificationaccess: User does not have access to modify the visibility of this</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80043e06.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80043e06&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80043E06: un Managedidsfulltextoperationfailed – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80043e06.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80043E06: un Managedidsfulltextoperationfailed – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80043E06 in Dataverse: unManagedidsfulltextoperationfailed: Full text operation</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80044405.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80044405&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80044405: un Managedidsincidentassociatedactivitycorrupted – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80044405.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80044405: un Managedidsincidentassociatedactivitycorrupted – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80044405 in Dataverse: unManagedidsincidentassociatedactivitycorrupted: The activity associated with this case is</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040808.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040808&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040808: un Managedidsjournalingmissingcontactid – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040808.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040808: un Managedidsjournalingmissingcontactid – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040808 in Dataverse: unManagedidsjournalingmissingcontactid: Contact Id</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-developer/dataverse-un-managedidsinvalidteamid-plugin.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-un-managedidsinvalidteamid-plugin&w=474&h=274&c=7"
+           loading="lazy"
+           alt="un Managedidsinvalidteamid (0x80040208) in Dataverse: Plugin, Power Automate and Custom Connector Handling">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-developer/dataverse-un-managedidsinvalidteamid-plugin.html" class="post-card__content-link">
+      <h2 class="post-card__title">un Managedidsinvalidteamid (0x80040208) in Dataverse: Plugin, Power Automate and Custom Connector Handling</h2>
+      <p class="post-card__excerpt">0x80040208 in Dataverse: unManagedidsinvalidteamid: Team with Id = {0} has type {1}. It&#x27;s not allowed to add members to Microsoft Entra(formerly AAD) security group teams or</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Developer
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c06.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c06&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C06: un Managedidsevalpropertynotfound – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c06.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C06: un Managedidsevalpropertynotfound – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C06 in Dataverse: unManagedidsevalpropertynotfound: The required property of the object was not</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c09.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c09&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C09: un Managedidsevalpropertyisnull – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c09.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C09: un Managedidsevalpropertyisnull – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C09 in Dataverse: unManagedidsevalpropertyisnull: The required property of the object was not</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x8004440a.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x8004440a&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x8004440A: un Managedidsincidentcannotclose – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x8004440a.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x8004440A: un Managedidsincidentcannotclose – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x8004440A in Dataverse: unManagedidsincidentcannotclose: The incident can not be closed because there are open activities for this</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c05.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c05&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C05: un Managedidsevalobjectnotfound – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c05.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C05: un Managedidsevalobjectnotfound – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C05 in Dataverse: unManagedidsevalobjectnotfound: The required object does not</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80044153.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80044153&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80044153: un Managedidsfetchbetweentext – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80044153.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80044153: un Managedidsfetchbetweentext – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80044153 in Dataverse: unManagedidsfetchbetweentext: between, not-between, in, and not-in operators are not allowed on attributes of type text or</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c0e.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c0e&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C0E: un Managedidsevalmissselectquery – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c0e.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C0E: un Managedidsevalmissselectquery – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C0E in Dataverse: unManagedidsevalmissselectquery: Missing the query subparameter in a select</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c07.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c07&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C07: un Managedidsevalmetabaseentitycompoundkeys – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c07.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C07: un Managedidsevalmetabaseentitycompoundkeys – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C07 in Dataverse: unManagedidsevalmetabaseentitycompoundkeys: The specified metabase object has compound keys. We do not support compound-key entities</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x8004020b.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x8004020b&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x8004020B: un Managedidsinvaliditemid – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x8004020b.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x8004020B: un Managedidsinvaliditemid – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x8004020B in Dataverse: unManagedidsinvaliditemid: Invalid item</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80040211.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80040211&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80040211: un Managedidsinvalidassociation – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80040211.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80040211: un Managedidsinvalidassociation – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80040211 in Dataverse: unManagedidsinvalidassociation: Invalid</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80042c0a.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80042c0a&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80042C0A: un Managedidsevalmetabaseentitynotmatchquery – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80042c0a.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80042C0A: un Managedidsevalmetabaseentitynotmatchquery – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80042C0A in Dataverse: unManagedidsevalmetabaseentitynotmatchquery: The specified refentityid does not the query for a WFPM_SELECT</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80044404.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80044404&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80044404: un Managedidsincidentinvalidstate – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80044404.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80044404: un Managedidsincidentinvalidstate – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80044404 in Dataverse: unManagedidsincidentinvalidstate: Incident state is</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+<article class="post-card post" data-layout="vertical" data-has-featured-image="true">
+  <a href="/dataverse-errors/dataverse-error-0x80044407.html" class="post-card__media" tabindex="-1">
+    <picture class="post-card__figure">
+      <img class="post-card__image" width="16" height="9"
+           src="https://tse1.mm.bing.net/th?q=dataverse-error-0x80044407&w=474&h=274&c=7"
+           loading="lazy"
+           alt="Dataverse Error 0x80044407: un Managedidsincidentnullactivitytypecode – Causes and Fix for Power Apps and Power Platform">
+    </picture>
+  </a>
+  <div class="post-card__content">
+    <a href="/dataverse-errors/dataverse-error-0x80044407.html" class="post-card__content-link">
+      <h2 class="post-card__title">Dataverse Error 0x80044407: un Managedidsincidentnullactivitytypecode – Causes and Fix for Power Apps and Power Platform</h2>
+      <p class="post-card__excerpt">0x80044407 in Dataverse: unManagedidsincidentnullactivitytypecode: The activitytypecode can&#x27;t be</p>
+    </a>
+    <div class="post-card__footer">
+      <span class="post-card__meta post-card__meta-tag-primary" rel="tag">
+        Dataverse Errors
+      </span>
+      <span class="post-card__meta post-card__meta--date">
+        October 24, 2026
+      </span>
+    </div>
+  </div>
+</article>
+        </div>
+      </div>
+    </main>
+<footer id="site-footer" class="site-footer dv-footer">
+  <div class="dv-footer__inner">
+    <nav class="nav-secondary" aria-label="Footer">
+      <ul class="nav-secondary__menu">
+        <li class="nav-secondary__menu-item"><a class="nav-secondary__menu-link" href="/"><span class="nav-secondary__menu-title">Home</span></a></li>
+        <li class="nav-secondary__menu-item"><a class="nav-secondary__menu-link" href="/page/dmca.html"><span class="nav-secondary__menu-title">Dmca</span></a></li>
+        <li class="nav-secondary__menu-item"><a class="nav-secondary__menu-link" href="/page/contact.html"><span class="nav-secondary__menu-title">Contact</span></a></li>
+        <li class="nav-secondary__menu-item"><a class="nav-secondary__menu-link" href="/page/privacy-policy.html"><span class="nav-secondary__menu-title">Privacy Policy</span></a></li>
+        <li class="nav-secondary__menu-item"><a class="nav-secondary__menu-link" href="/page/copyright.html"><span class="nav-secondary__menu-title">Copyright</span></a></li>
+      </ul>
+    </nav>
+    <p class="dv-footer__copy">&copy; 2026 Dynaverse Errors. Not affiliated with or endorsed by Microsoft. Product names are trademarks of Microsoft.</p>
+  </div>
+</footer>
+  </div>
+  <script defer src="/assets/kutukdev/js/main.js"></script>
+  <script defer src="/assets/kutukdev/js/search.js"></script>
+</body>
+</html>

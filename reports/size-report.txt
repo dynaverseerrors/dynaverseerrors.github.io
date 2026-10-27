@@ -1,0 +1,18 @@
+SIZE REPORT — extracted totals (GitHub 1GB limit, 200MB buffer -> budget 800MB)
+Final extracted total of ALL parts combined: 571.5 MB  (budget 800 MB — OK, 228.5 MB spare)
+
+Part 01 (core): extracted 0.3 MB | cumulative 0.3 MB | remaining under 800MB: 799.7 MB
+Part 02 (hub-dataverse-errors): extracted 58.8 MB | cumulative 59.0 MB | remaining under 800MB: 741.0 MB
+Part 03 (hub-dataverse-errors): extracted 53.6 MB | cumulative 112.6 MB | remaining under 800MB: 687.4 MB
+Part 04 (hub-dynamics-365-api-developer): extracted 59.4 MB | cumulative 172.0 MB | remaining under 800MB: 628.0 MB
+Part 05 (hub-dynamics-365-api-errors): extracted 59.8 MB | cumulative 231.8 MB | remaining under 800MB: 568.2 MB
+Part 06 (hub-dynamics-365-api-errors): extracted 53.7 MB | cumulative 285.5 MB | remaining under 800MB: 514.5 MB
+Part 07 (hub-dynamics-365-errors): extracted 59.6 MB | cumulative 345.1 MB | remaining under 800MB: 454.9 MB
+Part 08 (hub-dynamics-365-errors): extracted 54.3 MB | cumulative 399.3 MB | remaining under 800MB: 400.7 MB
+Part 09 (hub-dataverse-developer,dynamics-365-api): extracted 56.6 MB | cumulative 456.0 MB | remaining under 800MB: 344.0 MB
+Part 10 (hub-dataverse-errors,dynamics-365-admin,): extracted 55.5 MB | cumulative 511.5 MB | remaining under 800MB: 288.5 MB
+Part 11 (hub-dynamics-365-developer): extracted 55.8 MB | cumulative 567.3 MB | remaining under 800MB: 232.7 MB
+Part 12 (hub-dynamics-365-errors): extracted 4.3 MB | cumulative 571.5 MB | remaining under 800MB: 228.5 MB
+
+Total files on disk: 20051 (HTML, CSS, JS, fonts, brand, sitemaps, search index, GSC file)
+No local image copies (all images are hotlinked Bing URLs). No source/build files inside the deploy folder.

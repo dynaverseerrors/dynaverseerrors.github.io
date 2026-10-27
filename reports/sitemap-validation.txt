@@ -1,0 +1,9 @@
+SITEMAP VALIDATION — 2026-10-27
+sitemap.xml            : sitemap index with 8 hub sitemaps (hub sitemaps only)
+Hub sitemap URLs total : 20008 (8 hub pages + 20000 posts)
+All URLs absolute https: yes (https://dynaverseerrors.github.io/...)
+All URLs unique        : yes
+lastmod <= 2026-10-25  : yes (all dates backdated)
+robots.txt             : User-agent: * / Allow: / / Sitemap: https://dynaverseerrors.github.io/sitemap.xml
+GSC verification file  : /google4a76338cbc6eddcb.html at site root
+RESULT: PASS

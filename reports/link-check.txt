@@ -1,0 +1,8 @@
+LINK-CHECK REPORT — 2026-10-27
+Internal links checked : 740401
+Broken links           : 0
+Posts checked          : 20000/20000 (file exists + canonical match)
+Missing files          : 0
+Canonical mismatches   : 0
+Duplicate slugs        : 0   Duplicate titles: 0
+RESULT: PASS
