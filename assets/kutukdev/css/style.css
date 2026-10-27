@@ -85,3 +85,11 @@
 /* search results block on homepage */
 .dv-results{max-width:1160px;margin:0 auto;padding:0 20px}
 .dv-results__note{color:#5b6572;font-size:.95rem;margin:6px 0 14px}
+/* theme font tokens (inline in the original Ghost theme, missing from static build) */
+:root{--kutak--font-family--base:"Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--kutak--font-family--headings:var(--kutak--font-family--base);--kutak--font-family--headings-small:var(--kutak--font-family--base);--kutak--font-family--elements:var(--kutak--font-family--base);--kutak--font-weight--base:400;--kutak--font-weight--base-bold:700;--kutak--font-weight--headings:700;--kutak--font-weight--headings-small:700;--kutak--font-weight--elements:600}
+/* keep grid columns from growing past the viewport (min-content blowout) */
+.grid,[data-layout-grid=columns]{grid-template-columns:repeat(var(--kutak--grid--columns,1),minmax(0,1fr))}
+.post-card,.post-card__media,.post-card__figure{min-width:0}
+.site-header.dv-header{display:block}
+.post-card__content,.post-card__title,.post-card__excerpt,.article-title,.article-content,.article-content :is(h2,h3,h4,p,li,td,th,a){overflow-wrap:anywhere}
+.article-content pre,.kg-code-card pre{overflow-wrap:normal}
